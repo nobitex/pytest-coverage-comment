@@ -1,7 +1,7 @@
 # Pytest Coverage Comment
 
-![licience](https://img.shields.io/github/license/MishaKav/pytest-coverage-comment)
-![version](https://img.shields.io/github/package-json/v/MishaKav/pytest-coverage-comment)
+![licience](https://img.shields.io/github/license/nobitex/pytest-coverage-comment)
+![version](https://img.shields.io/github/package-json/v/nobitex/pytest-coverage-comment)
 [![wakatime](https://wakatime.com/badge/user/f838c8aa-c197-42f0-b335-cd1d26159dfd/project/b1e64a51-e518-4b91-bb00-189ffdd444c6.svg)](https://wakatime.com/badge/user/f838c8aa-c197-42f0-b335-cd1d26159dfd/project/b1e64a51-e518-4b91-bb00-189ffdd444c6)
 
 This action comments a pull request or commit with a HTML test coverage report.
@@ -21,7 +21,7 @@ You can add this action to your GitHub workflow for Ubuntu runners (e.g. runs-on
 
 ```yaml
 - name: Pytest coverage comment
-  uses: MishaKav/pytest-coverage-comment@main
+  uses: nobitex/pytest-coverage-comment@main
   with:
     pytest-coverage-path: ./pytest-coverage.txt
     junitxml-path: ./pytest.xml
@@ -81,7 +81,7 @@ the format will be JSON.stringify in current structure
 
 ## Output example
 
-<img alt="Coverage" src="https://img.shields.io/badge/Coverage-30%25-red.svg" /><br/><details><summary>Coverage Report</summary><table><tr><th>File</th><th>Stmts</th><th>Miss</th><th>Cover</th><th>Missing</th></tr><tbody><tr><td colspan="5"><b>functions/example_completed</b></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py">example_completed.py</a></td><td>64</td><td>19</td><td>70%</td><td><a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py#L33">33</a>, <a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py#L39-L45">39&ndash;45</a>, <a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py#L48-L51">48&ndash;51</a>, <a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py#L55-L58">55&ndash;58</a>, <a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py#L65-L70">65&ndash;70</a>, <a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py#L91-L92">91&ndash;92</a></td></tr><tr><td colspan="5"><b>functions/example_manager</b></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_manager/example_manager.py">example_manager.py</a></td><td>44</td><td>11</td><td>75%</td><td><a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_manager/example_manager.py#L31-L33">31&ndash;33</a>, <a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_manager/example_manager.py#L49-L55">49&ndash;55</a>, <a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_manager/example_manager.py#L67-L69">67&ndash;69</a></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_manager/example_static.py">example_static.py</a></td><td>40</td><td>2</td><td>95%</td><td><a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_manager/example_static.py#L60-L61">60&ndash;61</a></td></tr><tr><td colspan="5"><b>functions/my_exampels</b></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/my_exampels/example.py">example.py</a></td><td>20</td><td>20</td><td>0%</td><td><a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/my_exampels/example.py#L1-L31">1&ndash;31</a></td></tr><tr><td colspan="5"><b>functions/resources</b></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/resources/resources.py">resources.py</a></td><td>26</td><td>26</td><td>0%</td><td><a href="https://github.com/MishaKav/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/resources/resources.py#L1-L37">1&ndash;37</a></td></tr><tr><td><b>TOTAL</b></td><td><b>1055</b></td><td><b>739</b></td><td><b>30%</b></td><td>&nbsp;</td></tr></tbody></table></details>
+<img alt="Coverage" src="https://img.shields.io/badge/Coverage-30%25-red.svg" /><br/><details><summary>Coverage Report</summary><table><tr><th>File</th><th>Stmts</th><th>Miss</th><th>Cover</th><th>Missing</th></tr><tbody><tr><td colspan="5"><b>functions/example_completed</b></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py">example_completed.py</a></td><td>64</td><td>19</td><td>70%</td><td><a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py#L33">33</a>, <a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py#L39-L45">39&ndash;45</a>, <a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py#L48-L51">48&ndash;51</a>, <a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py#L55-L58">55&ndash;58</a>, <a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py#L65-L70">65&ndash;70</a>, <a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_completed/example_completed.py#L91-L92">91&ndash;92</a></td></tr><tr><td colspan="5"><b>functions/example_manager</b></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_manager/example_manager.py">example_manager.py</a></td><td>44</td><td>11</td><td>75%</td><td><a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_manager/example_manager.py#L31-L33">31&ndash;33</a>, <a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_manager/example_manager.py#L49-L55">49&ndash;55</a>, <a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_manager/example_manager.py#L67-L69">67&ndash;69</a></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_manager/example_static.py">example_static.py</a></td><td>40</td><td>2</td><td>95%</td><td><a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/example_manager/example_static.py#L60-L61">60&ndash;61</a></td></tr><tr><td colspan="5"><b>functions/my_exampels</b></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/my_exampels/example.py">example.py</a></td><td>20</td><td>20</td><td>0%</td><td><a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/my_exampels/example.py#L1-L31">1&ndash;31</a></td></tr><tr><td colspan="5"><b>functions/resources</b></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/resources/resources.py">resources.py</a></td><td>26</td><td>26</td><td>0%</td><td><a href="https://github.com/nobitex/pytest-coverage-comment/blob/680f562642190a6a28f6c54785c767e2586b44b8/functions/resources/resources.py#L1-L37">1&ndash;37</a></td></tr><tr><td><b>TOTAL</b></td><td><b>1055</b></td><td><b>739</b></td><td><b>30%</b></td><td>&nbsp;</td></tr></tbody></table></details>
 
 | Tests | Skipped | Failures | Errors   | Time               |
 | ----- | ------- | -------- | -------- | ------------------ |
@@ -93,7 +93,7 @@ The following is an example GitHub Action workflow that uses the Pytest Coverage
 
 ```yaml
 # This workflow will install dependencies, create coverage tests and run Pytest Coverage Comment
-# For more information see: https://github.com/MishaKav/pytest-coverage-comment/
+# For more information see: https://github.com/nobitex/pytest-coverage-comment/
 name: pytest-coverage-comment
 on:
   pull_request:
@@ -130,7 +130,7 @@ jobs:
           pytest --junitxml=pytest.xml --cov-report=term-missing:skip-covered --cov=app tests/ | tee pytest-coverage.txt
 
       - name: Pytest coverage comment
-        uses: MishaKav/pytest-coverage-comment@main
+        uses: nobitex/pytest-coverage-comment@main
         with:
           pytest-coverage-path: ./pytest-coverage.txt
           junitxml-path: ./pytest.xml
@@ -141,7 +141,7 @@ Example GitHub Action workflow that uses coverage percentage as output (see the 
 ```yaml
 - name: Pytest coverage comment
   id: coverageComment
-  uses: MishaKav/pytest-coverage-comment@main
+  uses: nobitex/pytest-coverage-comment@main
   with:
     pytest-coverage-path: ./pytest-coverage.txt
     junitxml-path: ./pytest.xml
@@ -168,7 +168,7 @@ Example GitHub Action workflow that get coverage report from coverage-xml instea
 
 ```yaml
 - name: Pytest coverage comment
-  uses: MishaKav/pytest-coverage-comment@main
+  uses: nobitex/pytest-coverage-comment@main
   with:
     pytest-xml-coverage-path: ./coverage.xml
 ```
@@ -177,7 +177,7 @@ Example GitHub Action workflow that passes all params to Pytest Coverage Comment
 
 ```yaml
 - name: Pytest coverage comment
-  uses: MishaKav/pytest-coverage-comment@main
+  uses: nobitex/pytest-coverage-comment@main
   with:
     pytest-coverage-path: ./path-to-file/pytest-coverage.txt
     pytest-xml-coverage-path: ./path-to-file/coverage.xml
@@ -205,7 +205,7 @@ It will generate `pytest-coverage.txt` and `pytest.xml` in `/tmp` directory insi
     docker run -v /tmp:/tmp $IMAGE_TAG python3 -m pytest --cov-report=term-missing:skip-covered --junitxml=/tmp/pytest.xml --cov=src tests/ | tee /tmp/pytest-coverage.txt
 
 - name: Pytest coverage comment
-  uses: MishaKav/pytest-coverage-comment@main
+  uses: nobitex/pytest-coverage-comment@main
   with:
     pytest-coverage-path: /tmp/pytest-coverage.txt
     junitxml-path: /tmp/pytest.xml
@@ -215,7 +215,7 @@ Example GitHub Action workflow that uses multiple files mode (see the [live work
 
 ```yaml
 - name: Pytest coverage comment
-  uses: MishaKav/pytest-coverage-comment@main
+  uses: nobitex/pytest-coverage-comment@main
   with:
     multiple-files: |
       My Title 1, ./data/pytest-coverage_3.txt, ./data/pytest_junit_1.xml
@@ -256,7 +256,7 @@ jobs:
       - name: Pytest coverage comment
         if: ${{ github.ref == 'refs/heads/main' }}
         id: coverageComment
-        uses: MishaKav/pytest-coverage-comment@main
+        uses: nobitex/pytest-coverage-comment@main
         with:
           hide-comment: true
           pytest-coverage-path: ./data/pytest-coverage_4.txt
@@ -298,14 +298,14 @@ Multiple Files Mode (can be useful on mono-repo projects)
 ## Auto updating badge on README
 
 If you want auto-update the coverage badge on your Readme, you can see the [workflow](../main/.github/workflows/live-test.yml)
-![Auto Updating Bagde](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/MishaKav/5e90d640f8c212ab7bbac38f72323f80/raw/pytest-coverage-comment__main.json)
+![Auto Updating Bagde](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/nobitex/5e90d640f8c212ab7bbac38f72323f80/raw/pytest-coverage-comment__main.json)
 
 ## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-We welcome all contributions. You can submit any ideas as [pull requests](https://github.com/MishaKav/pytest-coverage-comment/pulls) or as [GitHub issues](https://github.com/MishaKav/pytest-coverage-comment/issues) and have a good time! :)
+We welcome all contributions. You can submit any ideas as [pull requests](https://github.com/nobitex/pytest-coverage-comment/pulls) or as [GitHub issues](https://github.com/nobitex/pytest-coverage-comment/issues) and have a good time! :)
 
 ## Our Contibutors
 
-<a href="https://github.com/MishaKav/pytest-coverage-comment/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=MishaKav/pytest-coverage-comment" alt="Contibutors" />
+<a href="https://github.com/nobitex/pytest-coverage-comment/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=nobitex/pytest-coverage-comment" alt="Contibutors" />
 </a>
